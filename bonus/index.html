@@ -15,9 +15,14 @@
         <h1>Lista email:</h1>
 
         <ul>
-            <li v-for="email in allEmail">
+            <!-- <li v-for="email in allEmail">
                 {{email}}
-            </li>
+            </li> -->
+            <template v-if="allEmail.length === 10">
+                <li v-for="email in allEmail">
+                    {{email}}
+                </li>
+            </template>
         </ul>
 
     </div>
