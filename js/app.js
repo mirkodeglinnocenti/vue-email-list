@@ -16,6 +16,7 @@ const { createApp } = Vue
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then((res) => {
                 const email = res.data.response;
+                // const { response: email } = res.data è uguale a riga 18
                 
                 this.allEmail.push(email)
                 console.log(this.allEmail)
